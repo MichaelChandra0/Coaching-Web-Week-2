@@ -2,11 +2,11 @@ const Klik = (props) => {
   props.nama = document.querySelector("input").value;
   return alert(`Halo ${props.nama}`);
 };
-const Form = (props) => {
+const Form = () => {
   return (
     <div>
       Masukan Nama
-      <input type="text" value={props.nama} />
+      <input type="text" />
       <button onClick={Klik}>Submit</button>
     </div>
   );
